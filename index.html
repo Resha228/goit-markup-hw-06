@@ -457,13 +457,57 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
           <svg class="modal-button" width="8px" height="8px">
             <use href="./images/symbol-defs-icon.svg#icon-close-button"></use>
           </svg>
         </button>
+        <h3 class="modal-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form class="modal-form">
+          <div class="form-stage">
+            <label class="form-label">
+              <span>Name</span>
+              <div class="form-group">
+                <input type="text" class="form-input" name="name" />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-stage">
+            <label class="form-label">
+              <span>Phone</span>
+              <div class="form-group">
+                <input type="text" class="form-input" name="name" />
+                <svg class="form-icon" width="18px" height="24px">
+                  <use href="./images/icons.svg.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-stage">
+            <label class="form-label">
+              <span>Email</span>
+              <div class="form-group">
+                <input type="text" class="form-input" name="name" />
+                <svg class="form-icon" width="18px" height="24px">
+                  <use href="./images/icons.svg.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-stage">
+            <label class="form-label">
+              <span>Comment</span>
+              <textarea name="comment" class="form-textarea"></textarea>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
