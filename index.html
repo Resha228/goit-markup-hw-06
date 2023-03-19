@@ -457,7 +457,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
           <svg class="modal-button" width="8px" height="8px">
@@ -472,7 +472,7 @@
             <label class="form-label">
               <span>Name</span>
               <div class="form-group">
-                <input type="text" class="form-input" name="name" />
+                <input type="text" class="form-input" name="name" required />
                 <svg class="form-icon" width="18px" height="18px">
                   <use href="./images/icons.svg.svg#icon-person"></use>
                 </svg>
@@ -483,7 +483,7 @@
             <label class="form-label">
               <span>Phone</span>
               <div class="form-group">
-                <input type="text" class="form-input" name="name" />
+                <input type="text" class="form-input" name="phone" required />
                 <svg class="form-icon" width="18px" height="24px">
                   <use href="./images/icons.svg.svg#icon-phone"></use>
                 </svg>
@@ -494,7 +494,7 @@
             <label class="form-label">
               <span>Email</span>
               <div class="form-group">
-                <input type="text" class="form-input" name="name" />
+                <input type="text" class="form-input" name="email" required />
                 <svg class="form-icon" width="18px" height="24px">
                   <use href="./images/icons.svg.svg#icon-email"></use>
                 </svg>
@@ -504,8 +504,33 @@
           <div class="form-stage">
             <label class="form-label">
               <span>Comment</span>
-              <textarea name="comment" class="form-textarea"></textarea>
+              <textarea
+                name="comment"
+                class="form-textarea"
+                placeholder="Text input"
+              ></textarea>
             </label>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="form-checkbox visually-hidden"
+            />
+            <label for="policy" class="form-label-checkbox">
+              <span>
+                <svg class="form-vector-icon" width="10px" height="8px">
+                  <use href="./images/icons.svg.svg#icon-vector"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="form-stage-btn">
+            <button type="submit" class="form-btn">Send</button>
           </div>
         </form>
       </div>
